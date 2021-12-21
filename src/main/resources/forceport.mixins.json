@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "me.duncanruns.forceport.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "NetworkUtilsMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

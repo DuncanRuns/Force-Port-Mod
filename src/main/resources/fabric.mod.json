@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "forceport",
+  "version": "${version}",
+  "name": "Force Port Mod",
+  "description": "Forces the port of open to lan to be 25565.",
+  "authors": [
+    "DuncanRuns"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/forceport/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.duncanruns.forceport.ForcePort"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "forceport.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12"
+  }
+}
