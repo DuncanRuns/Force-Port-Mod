@@ -16,7 +16,6 @@ public class ForcePort implements ModInitializer {
     @Override
     public void onInitialize() {
         log(Level.INFO, "Initializing");
-        //TODO: Initializer
     }
 
     public static void log(Level level, String message){
