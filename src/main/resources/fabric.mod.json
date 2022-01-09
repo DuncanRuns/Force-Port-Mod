@@ -3,7 +3,7 @@
   "id": "forceport",
   "version": "${version}",
   "name": "Force Port Mod",
-  "description": "Forces the port of open to lan to be 25565.",
+  "description": "Forces the port of open to lan to be 25565 and increases the player limit of open to lan to 20.",
   "authors": [
     "DuncanRuns",
     "AppDevMichael"
