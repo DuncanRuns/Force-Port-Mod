@@ -5,7 +5,8 @@
   "name": "Force Port Mod",
   "description": "Forces the port of open to lan to be 25565.",
   "authors": [
-    "DuncanRuns"
+    "DuncanRuns",
+    "AppDevMichael"
   ],
   "contributors": [],
   "contact": {},
