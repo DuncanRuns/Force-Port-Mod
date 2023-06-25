@@ -9,11 +9,11 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public abstract class PlayerManagerMixin {
     /**
      * @author AppDevMichael
-     * @reason Replace the default 8 player limit with 20
+     * @reason Replace the default 8 player limit with maximum integer value
      */
     @ModifyVariable(method = "<init>", at = @At(value = "HEAD"), argsOnly = true)
     private static int changeMaxPlayers(int maxPlayers) {
-        if (maxPlayers == 8) { return 20; }
+        if (maxPlayers == 8) return Integer.MAX_VALUE;
         return maxPlayers;
     }
 }
