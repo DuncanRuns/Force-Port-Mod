@@ -1,6 +1,6 @@
 package me.duncanruns.forceport.mixin;
 
-import me.duncanruns.forceport.*;
+import me.duncanruns.forceport.ForcePort;
 import net.minecraft.client.util.NetworkUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
