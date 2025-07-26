@@ -14,6 +14,13 @@
   "license": "MIT",
   "icon": "assets/forceport/icon.png",
   "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.duncanruns.forceport.ForcePort"
+    ],
+    "client": [],
+    "server": []
+  },
   "mixins": [
     "forceport.mixins.json"
   ],
