@@ -1,5 +1,6 @@
 package me.duncanruns.forceport.mixin;
 
+import me.duncanruns.forceport.*;
 import net.minecraft.client.util.NetworkUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -12,6 +13,6 @@ public abstract class NetworkUtilsMixin {
      */
     @Overwrite
     public static int findLocalPort() {
-        return 25565;
+        return ForcePort.speedrunapi ? ForcePort.config.port : ForcePort.port;
     }
 }
