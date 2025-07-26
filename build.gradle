@@ -22,6 +22,12 @@ dependencies {
 	modImplementation "com.github.contariaa:speedrunapi:v2.1-1.16.1"
 }
 
+loom {
+	mixin {
+		useLegacyMixinAp = false
+	}
+}
+
 processResources {
 	inputs.property "version", project.version
 
