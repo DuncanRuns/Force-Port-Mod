@@ -8,8 +8,7 @@ public class ForcePortConfig implements SpeedrunConfig {
     @Config.Numbers.TextField
     public int port = 25565;
 
-    @Override
-    public void finishLoading() {
+    {
         ForcePort.config = this;
     }
 
