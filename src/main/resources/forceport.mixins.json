@@ -3,10 +3,11 @@
   "package": "me.duncanruns.forceport.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "NetworkUtilsMixin",
-    "PlayerManagerMixin"
+    "NetworkUtilsMixin"
   ],
-  "client": [],
+  "client": [
+    "IntegratedServerMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
