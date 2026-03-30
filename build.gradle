@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.15-SNAPSHOT'
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -17,9 +17,9 @@ repositories {
 dependencies {
 	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings loom.officialMojangMappings()
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modCompileOnly "com.github.contariaa:speedrunapi:v2.1-1.16.1"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	compileOnly "com.github.contariaa:speedrunapi:v2.1-1.16.1"
 }
 
 loom {
