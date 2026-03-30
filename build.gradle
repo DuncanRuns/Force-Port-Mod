@@ -1,14 +1,14 @@
 plugins {
-	id 'fabric-loom' version '1.11-SNAPSHOT'
+	id 'fabric-loom' version '1.15-SNAPSHOT'
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
-archivesBaseName = project.archives_base_name
 version = "${project.mod_version}+MC${project.release_mc_version}"
 group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
 
 repositories {
 	maven {url "https://jitpack.io" }
@@ -36,9 +36,15 @@ processResources {
 	}
 }
 
-tasks.withType(JavaCompile) {
-	options.encoding = "UTF-8"
-	it.options.release = 8
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+}
+
+java {
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
 }
 
 jar {
