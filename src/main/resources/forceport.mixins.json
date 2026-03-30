@@ -3,7 +3,7 @@
   "package": "me.duncanruns.forceport.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "NetworkUtilsMixin"
+    "HttpUtilMixin"
   ],
   "client": [
     "IntegratedServerMixin"
